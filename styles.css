@@ -605,6 +605,104 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
 }
 
+/* Engagement Models Section */
+.engagement-models {
+    padding: 6rem 0;
+    background: var(--background-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.engagement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.engagement-card {
+    background: var(--background-gray);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.engagement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.engagement-card:hover::before {
+    left: 100%;
+}
+
+.engagement-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--glow-shadow);
+    transform: translateY(-10px);
+}
+
+.engagement-icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-shadow: var(--glow-shadow);
+    text-align: center;
+}
+
+.engagement-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.engagement-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.engagement-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.feature-tag {
+    background: var(--primary-color);
+    color: var(--background-dark);
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.feature-tag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 255, 136, 0.3);
+}
+
 /* Contact Section */
 .contact {
     padding: 6rem 0;
@@ -886,7 +984,8 @@ h1, h2, h3, h4, h5, h6 {
     .expertise-grid,
     .tools-grid,
     .portfolio-grid,
-    .features-grid {
+    .features-grid,
+    .engagement-grid {
         grid-template-columns: 1fr;
     }
 
