@@ -372,9 +372,9 @@ function createDynamicBugs() {
         bug.style.left = Math.random() * window.innerWidth + 'px';
         bug.style.top = Math.random() * window.innerHeight + 'px';
         
-        // Slower, more varied movement pattern
-        const moveInterval = 8000 + (index * 2000); // 8-18 seconds between moves
-        const transitionDuration = 6 + (index * 1); // 6-11 seconds transition
+        // Much slower, more subtle movement pattern
+        const moveInterval = 15000 + (index * 5000); // 15-20 seconds between moves
+        const transitionDuration = 12 + (index * 2); // 12-14 seconds transition
         
         setInterval(() => {
             const newX = Math.random() * window.innerWidth;

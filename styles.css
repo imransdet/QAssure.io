@@ -984,9 +984,5 @@ html {
 }
 
 /* Different opacity levels for variety */
-.animated-bug:nth-child(1) { opacity: 0.25; }
-.animated-bug:nth-child(2) { opacity: 0.2; }
-.animated-bug:nth-child(3) { opacity: 0.15; }
-.animated-bug:nth-child(4) { opacity: 0.1; }
-.animated-bug:nth-child(5) { opacity: 0.08; }
-.animated-bug:nth-child(6) { opacity: 0.06; }
+.animated-bug:nth-child(1) { opacity: 0.2; }
+.animated-bug:nth-child(2) { opacity: 0.15; }
